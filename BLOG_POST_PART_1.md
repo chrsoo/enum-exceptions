@@ -114,5 +114,5 @@ In some cases this will work just fine but if we want to handle different fault 
 
 Would it not be great if we could catch the code instead of the exception?
 
-To do this we need to extend the Java syntax which is discussed in the next post.
+To do this we need to extend the Java syntax which is discussed in the [next post](BLOG_POST_PART_2.md).
 

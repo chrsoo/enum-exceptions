@@ -1,4 +1,4 @@
-In the [first part](/wordpress/2016/04/java-enumerated-fault-exceptions/) of
+In the [first part](BLOG_POST_PART_1.md) of
 this blog post I discussed how enumerations can be conveniently used as fault
 codes in exceptions and how formatted error messages for fault codes can be
 obtained by having the enumeration implement an interface that provides a
