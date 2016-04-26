@@ -22,14 +22,20 @@ package se.jabberwocky.experimental.fault;
  *
  *     private final Code code;
  *
- *     public ExampleException(Code code, Object... args) {
- *     	   super(code.getMessage(args));
+ *     public ExampleException(Code code, Object... messageArgs) {
+ *     	   super(code.getMessage(messageArgs));
+ *         this.code = code;
+ *     }
+ *
+ *     public ExampleException(Code code, Throwable cause, Object... messageArgs) {
+ *     	   super(code.getMessage(messageArgs), cause);
  *         this.code = code;
  *     }
  *
  *     &#64;Override
  *     public Code code() {
  *         return code;
+ *     }
  *
  * }
  * </pre>

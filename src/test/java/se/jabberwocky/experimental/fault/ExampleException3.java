@@ -37,8 +37,13 @@ public final class ExampleException3
 
     private final Code code;
 
-    public ExampleException3(Code code, Object... args) {
-	super(code.getMessage(args));
+    public ExampleException3(Code code, Object... messageArgs) {
+	super(code.getMessage(messageArgs));
+	this.code = code;
+    }
+
+    public ExampleException3(Code code, Throwable cause, Object... messageArgs) {
+	super(code.getMessage(messageArgs), cause);
 	this.code = code;
     }
 
